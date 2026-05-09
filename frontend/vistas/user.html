@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Usuario - SportClub</title>
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+<link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+
+<div class="dashboard-layout">
+    <aside class="sidebar">
+        <div class="sidebar-logo">
+            <img src="../assets/logo.png" alt="Logo SportClub">
+            <h2>SportClub</h2>
+            <p>Panel Usuario</p>
+        </div>
+
+        <nav class="sidebar-menu">
+            <a href="user.html" class="active">Inicio</a>
+            <a href="#">Reservas</a>
+            <a href="#">Clases</a>
+            <a href="perfil.html">Perfil</a>
+        </nav>
+
+        <button class="logout-btn" onclick="cerrarSesion()">Cerrar sesión</button>
+    </aside>
+
+    <main class="main-content">
+        <div class="dashboard-card">
+            <div class="row align-items-center">
+                <div class="col-md-8">
+                    <h1 class="dashboard-title">Panel de Usuario</h1>
+                    <p class="dashboard-subtitle">
+                        Bienvenido a SportClub. Desde aquí puedes revisar tus reservas, clases disponibles y perfil personal.
+                    </p>
+                    <span class="role-badge role-user">user</span>
+                </div>
+                <div class="col-md-4 text-center">
+                    <img src="../assets/usuario.png" alt="Usuario" class="dashboard-avatar">
+                </div>
+            </div>
+        </div>
+
+        <div class="row g-4 mb-4">
+            <div class="col-md-4">
+                <div class="stat-card">
+                    <h3>3</h3>
+                    <p>Reservas activas</p>
+                </div>
+            </div>
+
+            <div class="col-md-4">
+                <div class="stat-card">
+                    <h3>8</h3>
+                    <p>Clases disponibles</p>
+                </div>
+            </div>
+
+            <div class="col-md-4">
+                <div class="stat-card">
+                    <h3>Perfil</h3>
+                    <p>Datos personales</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="row g-4">
+            <div class="col-md-6">
+                <div class="module-card">
+                    <h4>Mis Reservas</h4>
+                    <p>Clase de Crossfit - Lunes 18:00</p>
+                    <p>Yoga - Miércoles 19:00</p>
+                    <p>Spinning - Viernes 17:00</p>
+                </div>
+            </div>
+
+            <div class="col-md-6">
+                <div class="module-card">
+                    <h4>Clases Disponibles</h4>
+                    <p>Yoga, Funcional, Spinning, Boxeo y Crossfit.</p>
+                    <a href="perfil.html" class="btn btn-warning">Editar perfil</a>
+                </div>
+            </div>
+        </div>
+    </main>
+</div>
+
+<script src="../js/auth.js"></script>
+<script>
+protegerPagina();
+</script>
+</body>
+</html>
