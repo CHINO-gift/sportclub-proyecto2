@@ -31,9 +31,9 @@
         <div class="dashboard-card">
             <div class="row align-items-center">
                 <div class="col-md-8">
-                    <h1 class="dashboard-title">Panel de Usuario</h1>
+                    <h1 class="dashboard-title">Bienvenido a SportClub</h1>
                     <p class="dashboard-subtitle">
-                        Bienvenido a SportClub. Desde aquí puedes revisar tus reservas, clases disponibles y perfil personal.
+                        Revisa tus reservas, consulta clases disponibles y mantén actualizada tu información personal.
                     </p>
                     <span class="role-badge role-user">user</span>
                 </div>
@@ -61,26 +61,98 @@
 
             <div class="col-md-4">
                 <div class="stat-card">
-                    <h3>Perfil</h3>
-                    <p>Datos personales</p>
+                    <h3>Activo</h3>
+                    <p>Estado de cuenta</p>
                 </div>
             </div>
         </div>
 
-        <div class="row g-4">
+        <div class="row g-4 mb-4">
+            <div class="col-lg-6">
+                <div class="module-card">
+                    <h4>Próxima clase</h4>
+                    <p class="mb-1"><strong>Clase:</strong> Crossfit</p>
+                    <p class="mb-1"><strong>Día:</strong> Lunes</p>
+                    <p class="mb-1"><strong>Horario:</strong> 18:00 a 19:00</p>
+                    <p class="mb-3"><strong>Coach:</strong> Demo Coach 1</p>
+                    <a href="usuario-reservas.html" class="btn btn-warning">Ver mis reservas</a>
+                </div>
+            </div>
+
+            <div class="col-lg-6">
+                <div class="module-card">
+                    <h4>Clases recomendadas</h4>
+                    <p class="mb-1">Yoga - Martes 10:00 a 11:00</p>
+                    <p class="mb-1">Spinning - Viernes 17:00 a 18:00</p>
+                    <p class="mb-3">Boxeo - Sábado 10:00 a 11:30</p>
+                    <a href="usuario-clases.html" class="btn btn-primary-custom">Explorar clases</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="table-card">
+            <div class="d-flex flex-column flex-md-row justify-content-between align-items-md-center gap-3 mb-4">
+                <div>
+                    <h3 class="dashboard-title mb-1">Resumen de actividad</h3>
+                    <p class="dashboard-subtitle mb-0">
+                        Información general de tus reservas y actividades dentro del club.
+                    </p>
+                </div>
+            </div>
+
+            <div class="table-responsive">
+                <table class="table table-hover align-middle">
+                    <thead class="table-dark">
+                        <tr>
+                            <th>Actividad</th>
+                            <th>Día</th>
+                            <th>Horario</th>
+                            <th>Estado</th>
+                        </tr>
+                    </thead>
+
+                    <tbody>
+                        <tr>
+                            <td>Crossfit</td>
+                            <td>Lunes</td>
+                            <td>18:00 a 19:00</td>
+                            <td><span class="role-badge role-user">Reservada</span></td>
+                        </tr>
+                        <tr>
+                            <td>Yoga</td>
+                            <td>Miércoles</td>
+                            <td>19:00 a 20:00</td>
+                            <td><span class="role-badge role-user">Reservada</span></td>
+                        </tr>
+                        <tr>
+                            <td>Spinning</td>
+                            <td>Viernes</td>
+                            <td>17:00 a 18:00</td>
+                            <td><span class="role-badge role-user">Reservada</span></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+
+        <div class="row g-4 mt-1">
             <div class="col-md-6">
                 <div class="module-card">
-                    <h4>Mis Reservas</h4>
-                    <p>Consulta tus clases reservadas y horarios activos.</p>
-                    <a href="usuario-reservas.html" class="btn btn-warning">Ver reservas</a>
+                    <h4>Mi perfil</h4>
+                    <p>
+                        Mantén actualizados tus datos personales para que el club pueda gestionar correctamente tu información.
+                    </p>
+                    <a href="perfil.html" class="btn btn-warning">Editar perfil</a>
                 </div>
             </div>
 
             <div class="col-md-6">
                 <div class="module-card">
-                    <h4>Clases Disponibles</h4>
-                    <p>Revisa las clases disponibles para reservar dentro de SportClub.</p>
-                    <a href="usuario-clases.html" class="btn btn-primary-custom">Ver clases</a>
+                    <h4>Organiza tu semana</h4>
+                    <p>
+                        Revisa tus horarios y actividades disponibles para planificar mejor tus entrenamientos.
+                    </p>
+                    <a href="usuario-clases.html" class="btn btn-primary-custom">Ver horarios</a>
                 </div>
             </div>
         </div>
