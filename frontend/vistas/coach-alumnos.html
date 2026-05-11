@@ -33,7 +33,7 @@
                 <div class="col-md-8">
                     <h1 class="dashboard-title">Alumnos Asignados</h1>
                     <p class="dashboard-subtitle">
-                        Revisa los alumnos inscritos en tus clases y su información básica.
+                        Revisa los alumnos inscritos, las clases asignadas y la duración correspondiente de cada actividad.
                     </p>
                     <span class="role-badge role-coach">coach</span>
                 </div>
@@ -44,11 +44,36 @@
             </div>
         </div>
 
+        <div class="row g-4 mb-4">
+            <div class="col-md-4">
+                <div class="stat-card">
+                    <h3>6</h3>
+                    <p>Alumnos registrados</p>
+                </div>
+            </div>
+
+            <div class="col-md-4">
+                <div class="stat-card">
+                    <h3>5</h3>
+                    <p>Clases asociadas</p>
+                </div>
+            </div>
+
+            <div class="col-md-4">
+                <div class="stat-card">
+                    <h3>Semana</h3>
+                    <p>Horarios activos</p>
+                </div>
+            </div>
+        </div>
+
         <div class="table-card">
-            <div class="d-flex justify-content-between align-items-center mb-4">
+            <div class="d-flex flex-column flex-md-row justify-content-between align-items-md-center gap-3 mb-4">
                 <div>
                     <h3 class="dashboard-title mb-1">Lista de Alumnos</h3>
-                    <p class="dashboard-subtitle mb-0">Alumnos inscritos en clases del coach.</p>
+                    <p class="dashboard-subtitle mb-0">
+                        Listado de alumnos asociados a las clases del coach.
+                    </p>
                 </div>
             </div>
 
@@ -59,7 +84,8 @@
                             <th>Nombre</th>
                             <th>Email</th>
                             <th>Clase</th>
-                            <th>Horario</th>
+                            <th>Día</th>
+                            <th>Duración de la clase</th>
                         </tr>
                     </thead>
 
@@ -68,28 +94,68 @@
                             <td>Carlos Ruiz</td>
                             <td>carlos@demo.cl</td>
                             <td>Spinning</td>
-                            <td>Lunes 18:00</td>
+                            <td>Lunes</td>
+                            <td>18:00 a 19:00</td>
                         </tr>
                         <tr>
                             <td>Ana Torres</td>
                             <td>ana@demo.cl</td>
-                            <td>Funcional</td>
-                            <td>Miércoles 19:00</td>
+                            <td>Entrenamiento Funcional</td>
+                            <td>Miércoles</td>
+                            <td>19:00 a 20:00</td>
                         </tr>
                         <tr>
                             <td>Pedro Silva</td>
                             <td>pedro@demo.cl</td>
                             <td>Boxeo</td>
-                            <td>Sábado 10:00</td>
+                            <td>Sábado</td>
+                            <td>10:00 a 11:30</td>
                         </tr>
                         <tr>
                             <td>María González</td>
                             <td>maria@demo.cl</td>
                             <td>Spinning</td>
-                            <td>Lunes 18:00</td>
+                            <td>Lunes</td>
+                            <td>18:00 a 19:00</td>
+                        </tr>
+                        <tr>
+                            <td>Javiera Rojas</td>
+                            <td>javiera@demo.cl</td>
+                            <td>Yoga</td>
+                            <td>Martes</td>
+                            <td>10:00 a 11:00</td>
+                        </tr>
+                        <tr>
+                            <td>Matías Pérez</td>
+                            <td>matias@demo.cl</td>
+                            <td>Crossfit</td>
+                            <td>Jueves</td>
+                            <td>20:00 a 21:00</td>
                         </tr>
                     </tbody>
                 </table>
+            </div>
+        </div>
+
+        <div class="row g-4 mt-1">
+            <div class="col-md-6">
+                <div class="module-card">
+                    <h4>Seguimiento de alumnos</h4>
+                    <p>
+                        Esta sección permite visualizar qué alumnos están asociados a cada clase,
+                        facilitando la organización semanal del coach.
+                    </p>
+                </div>
+            </div>
+
+            <div class="col-md-6">
+                <div class="module-card">
+                    <h4>Organización de clases</h4>
+                    <p>
+                        Los horarios muestran el inicio y término de cada actividad para mantener
+                        una planificación más clara durante la semana.
+                    </p>
+                </div>
             </div>
         </div>
     </main>
