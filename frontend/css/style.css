@@ -16,6 +16,10 @@ body {
     font-family: Arial, Helvetica, sans-serif;
 }
 
+/* =========================
+   LOGIN Y REGISTRO
+========================= */
+
 .auth-body {
     min-height: 100vh;
     display: flex;
@@ -82,6 +86,102 @@ body {
 .form-select.is-invalid {
     border-color: var(--danger);
 }
+
+/* =========================
+   PÁGINA DE INICIO
+========================= */
+
+.home-hero {
+    min-height: 100vh;
+    background: linear-gradient(135deg, #2E1A47 0%, #3d245f 45%, #f4f4f4 45%, #f4f4f4 100%);
+    padding: 30px 0;
+}
+
+.home-content {
+    color: #fff;
+}
+
+.home-badge {
+    display: inline-block;
+    background: #F2B705;
+    color: #2E1A47;
+    padding: 8px 16px;
+    border-radius: 50px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.home-content h1 {
+    font-size: 56px;
+    font-weight: 800;
+    margin-bottom: 20px;
+    line-height: 1.1;
+}
+
+.home-content h1 span {
+    color: #F2B705;
+}
+
+.home-text {
+    font-size: 18px;
+    line-height: 1.7;
+    max-width: 550px;
+    color: #f1f1f1;
+}
+
+.home-info p {
+    margin-bottom: 10px;
+    color: #f1f1f1;
+}
+
+.home-card {
+    background: #fff;
+    border-radius: 24px;
+    padding: 36px;
+    box-shadow: 0 14px 35px rgba(0,0,0,.18);
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+.home-logo {
+    width: 120px;
+    height: 120px;
+    object-fit: contain;
+    margin-bottom: 20px;
+}
+
+.home-card h3 {
+    color: #2E1A47;
+    font-weight: 800;
+}
+
+.home-card p {
+    color: #666;
+}
+
+.home-feature {
+    background: #f4f4f4;
+    border-radius: 16px;
+    padding: 16px;
+    text-align: center;
+    border-left: 4px solid #F2B705;
+    height: 100%;
+}
+
+.home-feature strong {
+    display: block;
+    color: #2E1A47;
+    font-size: 18px;
+}
+
+.home-feature span {
+    color: #666;
+    font-size: 14px;
+}
+
+/* =========================
+   DASHBOARDS
+========================= */
 
 .dashboard-layout {
     min-height: 100vh;
@@ -256,6 +356,32 @@ body {
     box-shadow: 0 8px 24px rgba(0,0,0,.08);
 }
 
+/* =========================
+   RESPONSIVE
+========================= */
+
+@media (max-width: 991px) {
+    .home-hero {
+        background: linear-gradient(180deg, #2E1A47 0%, #3d245f 55%, #f4f4f4 55%, #f4f4f4 100%);
+    }
+
+    .home-content {
+        text-align: center;
+    }
+
+    .home-text {
+        margin: 0 auto;
+    }
+
+    .home-content h1 {
+        font-size: 44px;
+    }
+
+    .home-card {
+        max-width: 100%;
+    }
+}
+
 @media (max-width: 768px) {
     .dashboard-layout {
         flex-direction: column;
@@ -267,5 +393,9 @@ body {
 
     .main-content {
         padding: 20px;
+    }
+
+    .home-content h1 {
+        font-size: 38px;
     }
 }
