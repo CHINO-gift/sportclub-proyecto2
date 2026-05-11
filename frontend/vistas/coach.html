@@ -33,10 +33,11 @@
                 <div class="col-md-8">
                     <h1 class="dashboard-title">Panel de Coach</h1>
                     <p class="dashboard-subtitle">
-                        Gestiona tus clases asignadas, revisa alumnos y organiza tus horarios dentro de SportClub.
+                        Organiza tus clases, revisa alumnos inscritos y consulta tus horarios asignados dentro de SportClub.
                     </p>
                     <span class="role-badge role-coach">coach</span>
                 </div>
+
                 <div class="col-md-4 text-center">
                     <img src="../assets/coach.png" alt="Coach" class="dashboard-avatar">
                 </div>
@@ -53,33 +54,115 @@
 
             <div class="col-md-4">
                 <div class="stat-card">
-                    <h3>4</h3>
-                    <p>Clases semanales</p>
+                    <h3>5</h3>
+                    <p>Clases activas</p>
                 </div>
             </div>
 
             <div class="col-md-4">
                 <div class="stat-card">
-                    <h3>Horario</h3>
-                    <p>Organización semanal</p>
+                    <h3>Semana</h3>
+                    <p>Planificación vigente</p>
                 </div>
             </div>
         </div>
 
-        <div class="row g-4">
+        <div class="row g-4 mb-4">
+            <div class="col-lg-6">
+                <div class="module-card">
+                    <h4>Próxima clase asignada</h4>
+                    <p class="mb-1"><strong>Clase:</strong> Spinning</p>
+                    <p class="mb-1"><strong>Día:</strong> Lunes</p>
+                    <p class="mb-1"><strong>Horario:</strong> 18:00 a 19:00</p>
+                    <p class="mb-3"><strong>Alumnos inscritos:</strong> 15</p>
+                    <a href="coach-clases.html" class="btn btn-primary-custom">Ver clases</a>
+                </div>
+            </div>
+
+            <div class="col-lg-6">
+                <div class="module-card">
+                    <h4>Alumnos recientes</h4>
+                    <p class="mb-1">Carlos Ruiz - Spinning</p>
+                    <p class="mb-1">Ana Torres - Entrenamiento Funcional</p>
+                    <p class="mb-3">Pedro Silva - Boxeo</p>
+                    <a href="coach-alumnos.html" class="btn btn-warning">Ver alumnos</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="table-card">
+            <div class="d-flex flex-column flex-md-row justify-content-between align-items-md-center gap-3 mb-4">
+                <div>
+                    <h3 class="dashboard-title mb-1">Resumen semanal</h3>
+                    <p class="dashboard-subtitle mb-0">
+                        Vista general de las clases asignadas durante la semana.
+                    </p>
+                </div>
+            </div>
+
+            <div class="table-responsive">
+                <table class="table table-hover align-middle">
+                    <thead class="table-dark">
+                        <tr>
+                            <th>Día</th>
+                            <th>Clase</th>
+                            <th>Inicio</th>
+                            <th>Término</th>
+                            <th>Alumnos</th>
+                            <th>Estado</th>
+                        </tr>
+                    </thead>
+
+                    <tbody>
+                        <tr>
+                            <td>Lunes</td>
+                            <td>Spinning</td>
+                            <td>18:00</td>
+                            <td>19:00</td>
+                            <td>15</td>
+                            <td><span class="role-badge role-user">Activa</span></td>
+                        </tr>
+                        <tr>
+                            <td>Miércoles</td>
+                            <td>Entrenamiento Funcional</td>
+                            <td>19:00</td>
+                            <td>20:00</td>
+                            <td>12</td>
+                            <td><span class="role-badge role-user">Activa</span></td>
+                        </tr>
+                        <tr>
+                            <td>Sábado</td>
+                            <td>Boxeo</td>
+                            <td>10:00</td>
+                            <td>11:30</td>
+                            <td>10</td>
+                            <td><span class="role-badge role-user">Activa</span></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+
+        <div class="row g-4 mt-1">
             <div class="col-md-6">
                 <div class="module-card">
-                    <h4>Alumnos</h4>
-                    <p>Revisa los alumnos inscritos en tus clases y gestiona la información correspondiente.</p>
-                    <a href="coach-alumnos.html" class="btn btn-warning">Ver alumnos</a>
+                    <h4>Gestión de alumnos</h4>
+                    <p>
+                        Consulta los alumnos asociados a tus clases para mantener una mejor organización
+                        y seguimiento de las actividades.
+                    </p>
+                    <a href="coach-alumnos.html" class="btn btn-warning">Ir a alumnos</a>
                 </div>
             </div>
 
             <div class="col-md-6">
                 <div class="module-card">
-                    <h4>Clases Asignadas</h4>
-                    <p>Consulta las clases que tienes programadas durante la semana.</p>
-                    <a href="coach-clases.html" class="btn btn-primary-custom">Ver clases</a>
+                    <h4>Planificación de clases</h4>
+                    <p>
+                        Revisa tus clases asignadas, horarios de inicio y término, cupos disponibles
+                        y estado de cada actividad.
+                    </p>
+                    <a href="coach-clases.html" class="btn btn-primary-custom">Ir a clases</a>
                 </div>
             </div>
         </div>
