@@ -33,7 +33,7 @@
                 <div class="col-md-8">
                     <h1 class="dashboard-title">Mis Reservas</h1>
                     <p class="dashboard-subtitle">
-                        Revisa las clases que tienes reservadas actualmente.
+                        Consulta tus clases reservadas, horarios, coaches asignados y estado de cada actividad.
                     </p>
                     <span class="role-badge role-user">user</span>
                 </div>
@@ -44,8 +44,42 @@
             </div>
         </div>
 
+        <div class="row g-4 mb-4">
+            <div class="col-md-4">
+                <div class="stat-card">
+                    <h3>3</h3>
+                    <p>Reservas activas</p>
+                </div>
+            </div>
+
+            <div class="col-md-4">
+                <div class="stat-card">
+                    <h3>Semana</h3>
+                    <p>Planificación actual</p>
+                </div>
+            </div>
+
+            <div class="col-md-4">
+                <div class="stat-card">
+                    <h3>Activas</h3>
+                    <p>Estado de reservas</p>
+                </div>
+            </div>
+        </div>
+
         <div class="table-card">
-            <h3 class="dashboard-title mb-3">Reservas Activas</h3>
+            <div class="d-flex flex-column flex-md-row justify-content-between align-items-md-center gap-3 mb-4">
+                <div>
+                    <h3 class="dashboard-title mb-1">Reservas Activas</h3>
+                    <p class="dashboard-subtitle mb-0">
+                        Clases que tienes programadas durante la semana.
+                    </p>
+                </div>
+
+                <a href="usuario-clases.html" class="btn btn-primary-custom">
+                    Ver clases disponibles
+                </a>
+            </div>
 
             <div class="table-responsive">
                 <table class="table table-hover align-middle">
@@ -53,7 +87,9 @@
                         <tr>
                             <th>Clase</th>
                             <th>Día</th>
-                            <th>Horario</th>
+                            <th>Inicio</th>
+                            <th>Término</th>
+                            <th>Duración</th>
                             <th>Coach</th>
                             <th>Estado</th>
                         </tr>
@@ -64,6 +100,8 @@
                             <td>Crossfit</td>
                             <td>Lunes</td>
                             <td>18:00</td>
+                            <td>19:00</td>
+                            <td>1 hora</td>
                             <td>Demo Coach 1</td>
                             <td><span class="role-badge role-user">Activa</span></td>
                         </tr>
@@ -71,6 +109,8 @@
                             <td>Yoga</td>
                             <td>Miércoles</td>
                             <td>19:00</td>
+                            <td>20:00</td>
+                            <td>1 hora</td>
                             <td>Demo Coach 2</td>
                             <td><span class="role-badge role-user">Activa</span></td>
                         </tr>
@@ -78,11 +118,36 @@
                             <td>Spinning</td>
                             <td>Viernes</td>
                             <td>17:00</td>
+                            <td>18:00</td>
+                            <td>1 hora</td>
                             <td>Demo Coach 1</td>
                             <td><span class="role-badge role-user">Activa</span></td>
                         </tr>
                     </tbody>
                 </table>
+            </div>
+        </div>
+
+        <div class="row g-4 mt-1">
+            <div class="col-md-6">
+                <div class="module-card">
+                    <h4>Próxima reserva</h4>
+                    <p class="mb-1"><strong>Clase:</strong> Crossfit</p>
+                    <p class="mb-1"><strong>Día:</strong> Lunes</p>
+                    <p class="mb-1"><strong>Horario:</strong> 18:00 a 19:00</p>
+                    <p class="mb-0"><strong>Coach:</strong> Demo Coach 1</p>
+                </div>
+            </div>
+
+            <div class="col-md-6">
+                <div class="module-card">
+                    <h4>Recomendación</h4>
+                    <p>
+                        Revisa tus reservas antes de asistir al club y mantén organizada tu semana
+                        de entrenamiento según tus horarios disponibles.
+                    </p>
+                    <a href="usuario-clases.html" class="btn btn-warning">Explorar más clases</a>
+                </div>
             </div>
         </div>
     </main>
