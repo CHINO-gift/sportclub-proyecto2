@@ -29,6 +29,7 @@ Cada rol tiene acceso a vistas y funcionalidades diferentes dentro del sistema.
 
 ## Estructura del proyecto
 
+```txt
 Sportclub_Proyecto/
 ├── backend/
 ├── frontend/
