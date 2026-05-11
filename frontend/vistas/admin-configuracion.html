@@ -33,7 +33,7 @@
                 <div class="col-md-8">
                     <h1 class="dashboard-title">Configuración</h1>
                     <p class="dashboard-subtitle">
-                        Revisa parámetros generales del sistema SportClub.
+                        Revisa la información general del club y los parámetros visibles para la administración.
                     </p>
                     <span class="role-badge role-admin">admin</span>
                 </div>
@@ -47,19 +47,20 @@
         <div class="row g-4">
             <div class="col-md-6">
                 <div class="module-card">
-                    <h4>Datos del Sistema</h4>
+                    <h4>Datos del Club</h4>
                     <p><strong>Nombre:</strong> SportClub</p>
-                    <p><strong>Versión:</strong> FrontEnd con API</p>
-                    <p><strong>Estado:</strong> Conectado a backend</p>
+                    <p><strong>Tipo:</strong> Club deportivo y centro de entrenamiento</p>
+                    <p><strong>Estado:</strong> Activo</p>
+                    <p><strong>Horario general:</strong> Lunes a sábado, 08:00 a 22:00</p>
                 </div>
             </div>
 
             <div class="col-md-6">
                 <div class="module-card">
-                    <h4>Seguridad</h4>
-                    <p>El sistema utiliza token para proteger rutas privadas.</p>
-                    <p>Las páginas internas requieren sesión activa.</p>
-                    <p>Los formularios muestran mensajes de error en pantalla.</p>
+                    <h4>Seguridad y acceso</h4>
+                    <p>Solo los usuarios registrados pueden ingresar al sistema.</p>
+                    <p>El administrador puede gestionar usuarios y revisar información general.</p>
+                    <p>Los usuarios y coaches acceden únicamente a las secciones correspondientes a su rol.</p>
                 </div>
             </div>
 
@@ -79,23 +80,53 @@
 
                             <tbody>
                                 <tr>
-                                    <td>API</td>
-                                    <td>http://localhost:3000/api</td>
-                                    <td>Ruta base para consumo de endpoints</td>
+                                    <td>Reservas</td>
+                                    <td>Habilitadas</td>
+                                    <td>Los usuarios pueden revisar sus clases reservadas.</td>
                                 </tr>
                                 <tr>
-                                    <td>Autenticación</td>
-                                    <td>JWT Token</td>
-                                    <td>Token guardado en LocalStorage</td>
+                                    <td>Clases</td>
+                                    <td>Activas</td>
+                                    <td>El sistema muestra clases disponibles y horarios de entrenamiento.</td>
                                 </tr>
                                 <tr>
-                                    <td>Validaciones</td>
-                                    <td>FrontEnd</td>
-                                    <td>Campos obligatorios, email y contraseña</td>
+                                    <td>Perfiles</td>
+                                    <td>Editables</td>
+                                    <td>Los usuarios pueden actualizar sus datos personales desde su perfil.</td>
+                                </tr>
+                                <tr>
+                                    <td>Roles</td>
+                                    <td>Admin, Coach y Usuario</td>
+                                    <td>Cada tipo de usuario tiene acceso a funciones diferentes.</td>
+                                </tr>
+                                <tr>
+                                    <td>Estado del club</td>
+                                    <td>Operativo</td>
+                                    <td>El sistema se encuentra disponible para la gestión diaria.</td>
                                 </tr>
                             </tbody>
                         </table>
                     </div>
+                </div>
+            </div>
+
+            <div class="col-md-6">
+                <div class="module-card">
+                    <h4>Recomendación administrativa</h4>
+                    <p>
+                        Mantener actualizada la información de usuarios, clases y reservas para facilitar
+                        la organización interna del club.
+                    </p>
+                </div>
+            </div>
+
+            <div class="col-md-6">
+                <div class="module-card">
+                    <h4>Uso del sistema</h4>
+                    <p>
+                        Esta plataforma permite centralizar la información principal de SportClub y mejorar
+                        la gestión entre administradores, coaches y usuarios.
+                    </p>
                 </div>
             </div>
         </div>
