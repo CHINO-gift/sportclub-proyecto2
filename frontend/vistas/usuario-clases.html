@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Clases Usuario - SportClub</title>
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+<link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+
+<div class="dashboard-layout">
+    <aside class="sidebar">
+        <div class="sidebar-logo">
+            <img src="../assets/logo.png" alt="Logo SportClub">
+            <h2>SportClub</h2>
+            <p>Panel Usuario</p>
+        </div>
+
+        <nav class="sidebar-menu">
+            <a href="user.html">Inicio</a>
+            <a href="usuario-reservas.html">Reservas</a>
+            <a href="usuario-clases.html" class="active">Clases</a>
+            <a href="perfil.html">Perfil</a>
+        </nav>
+
+        <button class="logout-btn" onclick="cerrarSesion()">Cerrar sesión</button>
+    </aside>
+
+    <main class="main-content">
+        <div class="dashboard-card">
+            <div class="row align-items-center">
+                <div class="col-md-8">
+                    <h1 class="dashboard-title">Clases Disponibles</h1>
+                    <p class="dashboard-subtitle">
+                        Revisa las actividades disponibles dentro de SportClub.
+                    </p>
+                    <span class="role-badge role-user">user</span>
+                </div>
+
+                <div class="col-md-4 text-center">
+                    <img src="../assets/usuario.png" alt="Usuario" class="dashboard-avatar">
+                </div>
+            </div>
+        </div>
+
+        <div class="row g-4 mb-4">
+            <div class="col-md-4">
+                <div class="module-card">
+                    <h4>Yoga</h4>
+                    <p>Clase enfocada en flexibilidad, respiración y bienestar físico.</p>
+                    <span class="role-badge role-user">Disponible</span>
+                </div>
+            </div>
+
+            <div class="col-md-4">
+                <div class="module-card">
+                    <h4>Funcional</h4>
+                    <p>Entrenamiento completo para mejorar fuerza y resistencia.</p>
+                    <span class="role-badge role-user">Disponible</span>
+                </div>
+            </div>
+
+            <div class="col-md-4">
+                <div class="module-card">
+                    <h4>Spinning</h4>
+                    <p>Clase cardiovascular de alta intensidad en bicicleta estática.</p>
+                    <span class="role-badge role-user">Disponible</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="table-card">
+            <h3 class="dashboard-title mb-3">Horario de Clases</h3>
+
+            <div class="table-responsive">
+                <table class="table table-hover align-middle">
+                    <thead class="table-dark">
+                        <tr>
+                            <th>Clase</th>
+                            <th>Día</th>
+                            <th>Horario</th>
+                            <th>Cupos</th>
+                            <th>Coach</th>
+                        </tr>
+                    </thead>
+
+                    <tbody>
+                        <tr>
+                            <td>Yoga</td>
+                            <td>Martes</td>
+                            <td>10:00</td>
+                            <td>15</td>
+                            <td>Demo Coach 1</td>
+                        </tr>
+                        <tr>
+                            <td>Funcional</td>
+                            <td>Miércoles</td>
+                            <td>19:00</td>
+                            <td>12</td>
+                            <td>Demo Coach 2</td>
+                        </tr>
+                        <tr>
+                            <td>Spinning</td>
+                            <td>Viernes</td>
+                            <td>17:00</td>
+                            <td>20</td>
+                            <td>Demo Coach 1</td>
+                        </tr>
+                        <tr>
+                            <td>Boxeo</td>
+                            <td>Sábado</td>
+                            <td>10:00</td>
+                            <td>10</td>
+                            <td>Demo Coach 2</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </main>
+</div>
+
+<script src="../js/auth.js"></script>
+<script>
+protegerPagina();
+</script>
+</body>
+</html>
