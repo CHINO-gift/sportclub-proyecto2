@@ -33,7 +33,7 @@
                 <div class="col-md-8">
                     <h1 class="dashboard-title">Clases Disponibles</h1>
                     <p class="dashboard-subtitle">
-                        Revisa las actividades disponibles dentro de SportClub.
+                        Revisa las actividades disponibles, horarios, cupos y coaches asignados dentro de SportClub.
                     </p>
                     <span class="role-badge role-user">user</span>
                 </div>
@@ -49,14 +49,18 @@
                 <div class="module-card">
                     <h4>Yoga</h4>
                     <p>Clase enfocada en flexibilidad, respiración y bienestar físico.</p>
+                    <p class="mb-1"><strong>Horario:</strong> Martes, 10:00 a 11:00</p>
+                    <p class="mb-3"><strong>Cupos:</strong> 15 disponibles</p>
                     <span class="role-badge role-user">Disponible</span>
                 </div>
             </div>
 
             <div class="col-md-4">
                 <div class="module-card">
-                    <h4>Funcional</h4>
-                    <p>Entrenamiento completo para mejorar fuerza y resistencia.</p>
+                    <h4>Entrenamiento Funcional</h4>
+                    <p>Actividad completa para mejorar fuerza, coordinación y resistencia.</p>
+                    <p class="mb-1"><strong>Horario:</strong> Miércoles, 19:00 a 20:00</p>
+                    <p class="mb-3"><strong>Cupos:</strong> 12 disponibles</p>
                     <span class="role-badge role-user">Disponible</span>
                 </div>
             </div>
@@ -65,13 +69,48 @@
                 <div class="module-card">
                     <h4>Spinning</h4>
                     <p>Clase cardiovascular de alta intensidad en bicicleta estática.</p>
+                    <p class="mb-1"><strong>Horario:</strong> Viernes, 17:00 a 18:00</p>
+                    <p class="mb-3"><strong>Cupos:</strong> 20 disponibles</p>
+                    <span class="role-badge role-user">Disponible</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="row g-4 mb-4">
+            <div class="col-md-6">
+                <div class="module-card">
+                    <h4>Boxeo</h4>
+                    <p>Entrenamiento físico y técnico orientado a mejorar resistencia, coordinación y disciplina.</p>
+                    <p class="mb-1"><strong>Horario:</strong> Sábado, 10:00 a 11:30</p>
+                    <p class="mb-3"><strong>Cupos:</strong> 10 disponibles</p>
+                    <span class="role-badge role-user">Disponible</span>
+                </div>
+            </div>
+
+            <div class="col-md-6">
+                <div class="module-card">
+                    <h4>Crossfit</h4>
+                    <p>Entrenamiento de alta intensidad enfocado en fuerza, potencia y condición física general.</p>
+                    <p class="mb-1"><strong>Horario:</strong> Jueves, 20:00 a 21:00</p>
+                    <p class="mb-3"><strong>Cupos:</strong> 14 disponibles</p>
                     <span class="role-badge role-user">Disponible</span>
                 </div>
             </div>
         </div>
 
         <div class="table-card">
-            <h3 class="dashboard-title mb-3">Horario de Clases</h3>
+            <div class="d-flex flex-column flex-md-row justify-content-between align-items-md-center gap-3 mb-4">
+                <div>
+                    <h3 class="dashboard-title mb-1">Horario de Clases</h3>
+                    <p class="dashboard-subtitle mb-0">
+                        Revisa el detalle semanal de clases disponibles para planificar tus entrenamientos.
+                    </p>
+                </div>
+
+                <a href="usuario-reservas.html" class="btn btn-warning">
+                    Ver mis reservas
+                </a>
+            </div>
 
             <div class="table-responsive">
                 <table class="table table-hover align-middle">
@@ -79,7 +118,9 @@
                         <tr>
                             <th>Clase</th>
                             <th>Día</th>
-                            <th>Horario</th>
+                            <th>Inicio</th>
+                            <th>Término</th>
+                            <th>Duración</th>
                             <th>Cupos</th>
                             <th>Coach</th>
                         </tr>
@@ -90,13 +131,17 @@
                             <td>Yoga</td>
                             <td>Martes</td>
                             <td>10:00</td>
+                            <td>11:00</td>
+                            <td>1 hora</td>
                             <td>15</td>
                             <td>Demo Coach 1</td>
                         </tr>
                         <tr>
-                            <td>Funcional</td>
+                            <td>Entrenamiento Funcional</td>
                             <td>Miércoles</td>
                             <td>19:00</td>
+                            <td>20:00</td>
+                            <td>1 hora</td>
                             <td>12</td>
                             <td>Demo Coach 2</td>
                         </tr>
@@ -104,6 +149,8 @@
                             <td>Spinning</td>
                             <td>Viernes</td>
                             <td>17:00</td>
+                            <td>18:00</td>
+                            <td>1 hora</td>
                             <td>20</td>
                             <td>Demo Coach 1</td>
                         </tr>
@@ -111,11 +158,43 @@
                             <td>Boxeo</td>
                             <td>Sábado</td>
                             <td>10:00</td>
+                            <td>11:30</td>
+                            <td>1 hora 30 min</td>
                             <td>10</td>
                             <td>Demo Coach 2</td>
                         </tr>
+                        <tr>
+                            <td>Crossfit</td>
+                            <td>Jueves</td>
+                            <td>20:00</td>
+                            <td>21:00</td>
+                            <td>1 hora</td>
+                            <td>14</td>
+                            <td>Demo Coach 1</td>
+                        </tr>
                     </tbody>
                 </table>
+            </div>
+        </div>
+
+        <div class="row g-4 mt-1">
+            <div class="col-md-6">
+                <div class="module-card">
+                    <h4>Planifica tus entrenamientos</h4>
+                    <p>
+                        Revisa los horarios disponibles y organiza tus clases según tu rutina semanal.
+                    </p>
+                </div>
+            </div>
+
+            <div class="col-md-6">
+                <div class="module-card">
+                    <h4>Reservas activas</h4>
+                    <p>
+                        Consulta tus clases ya reservadas para confirmar horarios, coaches y estado de tus actividades.
+                    </p>
+                    <a href="usuario-reservas.html" class="btn btn-warning">Ir a reservas</a>
+                </div>
             </div>
         </div>
     </main>
