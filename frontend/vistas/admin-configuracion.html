@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Configuración - SportClub</title>
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+<link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+
+<div class="dashboard-layout">
+    <aside class="sidebar">
+        <div class="sidebar-logo">
+            <img src="../assets/logo.png" alt="Logo SportClub">
+            <h2>SportClub</h2>
+            <p>Panel Administrador</p>
+        </div>
+
+        <nav class="sidebar-menu">
+            <a href="admin.html">Usuarios</a>
+            <a href="admin-reportes.html">Reportes</a>
+            <a href="admin-configuracion.html" class="active">Configuración</a>
+            <a href="perfil.html">Perfil</a>
+        </nav>
+
+        <button class="logout-btn" onclick="cerrarSesion()">Cerrar sesión</button>
+    </aside>
+
+    <main class="main-content">
+        <div class="dashboard-card">
+            <div class="row align-items-center">
+                <div class="col-md-8">
+                    <h1 class="dashboard-title">Configuración</h1>
+                    <p class="dashboard-subtitle">
+                        Revisa parámetros generales del sistema SportClub.
+                    </p>
+                    <span class="role-badge role-admin">admin</span>
+                </div>
+
+                <div class="col-md-4 text-center">
+                    <img src="../assets/admin.png" alt="Administrador" class="dashboard-avatar">
+                </div>
+            </div>
+        </div>
+
+        <div class="row g-4">
+            <div class="col-md-6">
+                <div class="module-card">
+                    <h4>Datos del Sistema</h4>
+                    <p><strong>Nombre:</strong> SportClub</p>
+                    <p><strong>Versión:</strong> FrontEnd con API</p>
+                    <p><strong>Estado:</strong> Conectado a backend</p>
+                </div>
+            </div>
+
+            <div class="col-md-6">
+                <div class="module-card">
+                    <h4>Seguridad</h4>
+                    <p>El sistema utiliza token para proteger rutas privadas.</p>
+                    <p>Las páginas internas requieren sesión activa.</p>
+                    <p>Los formularios muestran mensajes de error en pantalla.</p>
+                </div>
+            </div>
+
+            <div class="col-md-12">
+                <div class="table-card">
+                    <h3 class="dashboard-title mb-3">Configuraciones Generales</h3>
+
+                    <div class="table-responsive">
+                        <table class="table table-hover align-middle">
+                            <thead class="table-dark">
+                                <tr>
+                                    <th>Configuración</th>
+                                    <th>Valor</th>
+                                    <th>Descripción</th>
+                                </tr>
+                            </thead>
+
+                            <tbody>
+                                <tr>
+                                    <td>API</td>
+                                    <td>http://localhost:3000/api</td>
+                                    <td>Ruta base para consumo de endpoints</td>
+                                </tr>
+                                <tr>
+                                    <td>Autenticación</td>
+                                    <td>JWT Token</td>
+                                    <td>Token guardado en LocalStorage</td>
+                                </tr>
+                                <tr>
+                                    <td>Validaciones</td>
+                                    <td>FrontEnd</td>
+                                    <td>Campos obligatorios, email y contraseña</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+</div>
+
+<script src="../js/auth.js"></script>
+<script>
+protegerPagina();
+</script>
+</body>
+</html>
