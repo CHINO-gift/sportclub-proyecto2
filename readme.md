@@ -4,7 +4,15 @@ Proyecto desarrollado para la evaluación de Programación Front End.
 
 ## Descripción
 
-SportClub es una aplicación web conectada a una API que permite autenticación de usuarios, registro, redirección por rol, gestión de usuarios para administrador, visualización y edición de perfil, además de cambio de contraseña.
+SportClub es una aplicación web para la gestión de un club deportivo. El sistema permite iniciar sesión, registrar usuarios, redirigir según rol, administrar usuarios, revisar paneles personalizados, editar perfil y cambiar contraseña.
+
+El proyecto cuenta con tres tipos de usuarios:
+
+- Administrador
+- Coach
+- Usuario
+
+Cada rol tiene acceso a vistas y funcionalidades diferentes dentro del sistema.
 
 ## Tecnologías utilizadas
 
@@ -21,27 +29,38 @@ SportClub es una aplicación web conectada a una API que permite autenticación 
 
 ## Estructura del proyecto
 
-```txt
 Sportclub_Proyecto/
 ├── backend/
-└── frontend/
-    ├── index.html
-    ├── assets/
-    ├── css/
-    │   └── style.css
-    ├── js/
-    │   ├── api.js
-    │   ├── auth.js
-    │   ├── config.js
-    │   ├── login.js
-    │   ├── register.js
-    │   ├── admin.js
-    │   ├── perfil.js
-    │   └── validators.js
-    └── vistas/
-        ├── login.html
-        ├── register.html
-        ├── admin.html
-        ├── coach.html
-        ├── user.html
-        └── perfil.html
+├── frontend/
+│   ├── index.html
+│   ├── assets/
+│   │   ├── admin.png
+│   │   ├── coach.png
+│   │   ├── logo.png
+│   │   ├── perfil.png
+│   │   └── usuario.png
+│   ├── css/
+│   │   └── style.css
+│   ├── js/
+│   │   ├── admin.js
+│   │   ├── api.js
+│   │   ├── auth.js
+│   │   ├── config.js
+│   │   ├── login.js
+│   │   ├── perfil.js
+│   │   ├── register.js
+│   │   └── validators.js
+│   └── vistas/
+│       ├── admin.html
+│       ├── admin-configuracion.html
+│       ├── admin-reportes.html
+│       ├── coach.html
+│       ├── coach-alumnos.html
+│       ├── coach-clases.html
+│       ├── login.html
+│       ├── perfil.html
+│       ├── register.html
+│       ├── user.html
+│       ├── usuario-clases.html
+│       └── usuario-reservas.html
+└── README.md
