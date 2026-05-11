@@ -33,7 +33,7 @@
                 <div class="col-md-8">
                     <h1 class="dashboard-title">Clases Asignadas</h1>
                     <p class="dashboard-subtitle">
-                        Consulta las clases que tienes asignadas durante la semana.
+                        Consulta las clases asignadas, sus horarios de inicio y término, cupos disponibles y estado actual.
                     </p>
                     <span class="role-badge role-coach">coach</span>
                 </div>
@@ -48,21 +48,21 @@
             <div class="col-md-4">
                 <div class="stat-card">
                     <h3>Spinning</h3>
-                    <p>Lunes 18:00</p>
+                    <p>Lunes, 18:00 a 19:00</p>
                 </div>
             </div>
 
             <div class="col-md-4">
                 <div class="stat-card">
-                    <h3>Funcional</h3>
-                    <p>Miércoles 19:00</p>
+                    <h3>Entrenamiento Funcional</h3>
+                    <p>Miércoles, 19:00 a 20:00</p>
                 </div>
             </div>
 
             <div class="col-md-4">
                 <div class="stat-card">
                     <h3>Boxeo</h3>
-                    <p>Sábado 10:00</p>
+                    <p>Sábado, 10:00 a 11:30</p>
                 </div>
             </div>
         </div>
@@ -76,7 +76,9 @@
                         <tr>
                             <th>Día</th>
                             <th>Clase</th>
-                            <th>Horario</th>
+                            <th>Inicio</th>
+                            <th>Término</th>
+                            <th>Duración</th>
                             <th>Cupos</th>
                             <th>Estado</th>
                         </tr>
@@ -87,13 +89,17 @@
                             <td>Lunes</td>
                             <td>Spinning</td>
                             <td>18:00</td>
+                            <td>19:00</td>
+                            <td>1 hora</td>
                             <td>15</td>
                             <td><span class="role-badge role-user">Activa</span></td>
                         </tr>
                         <tr>
                             <td>Miércoles</td>
-                            <td>Funcional</td>
+                            <td>Entrenamiento Funcional</td>
                             <td>19:00</td>
+                            <td>20:00</td>
+                            <td>1 hora</td>
                             <td>12</td>
                             <td><span class="role-badge role-user">Activa</span></td>
                         </tr>
@@ -101,11 +107,53 @@
                             <td>Sábado</td>
                             <td>Boxeo</td>
                             <td>10:00</td>
+                            <td>11:30</td>
+                            <td>1 hora 30 min</td>
                             <td>10</td>
+                            <td><span class="role-badge role-user">Activa</span></td>
+                        </tr>
+                        <tr>
+                            <td>Martes</td>
+                            <td>Yoga</td>
+                            <td>10:00</td>
+                            <td>11:00</td>
+                            <td>1 hora</td>
+                            <td>15</td>
+                            <td><span class="role-badge role-user">Activa</span></td>
+                        </tr>
+                        <tr>
+                            <td>Jueves</td>
+                            <td>Crossfit</td>
+                            <td>20:00</td>
+                            <td>21:00</td>
+                            <td>1 hora</td>
+                            <td>14</td>
                             <td><span class="role-badge role-user">Activa</span></td>
                         </tr>
                     </tbody>
                 </table>
+            </div>
+        </div>
+
+        <div class="row g-4 mt-1">
+            <div class="col-md-6">
+                <div class="module-card">
+                    <h4>Planificación semanal</h4>
+                    <p>
+                        Esta vista permite revisar las clases asignadas durante la semana,
+                        considerando horarios, duración y cupos disponibles.
+                    </p>
+                </div>
+            </div>
+
+            <div class="col-md-6">
+                <div class="module-card">
+                    <h4>Control de clases</h4>
+                    <p>
+                        El coach puede consultar rápidamente qué actividades tiene asignadas
+                        y organizar mejor su trabajo con los alumnos.
+                    </p>
+                </div>
             </div>
         </div>
     </main>
